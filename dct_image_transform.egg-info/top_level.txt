@@ -1,2 +1,0 @@
-dct_image_transform
-tests
