@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dct-image-transform
+Version: 1.0.0
+Summary: DCT係数上での高速な画像変換
+Home-page: https://github.com/kanpurin/dctimagetransform
+Author: Kanchi Hibi
+Author-email: kanpurin2@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
