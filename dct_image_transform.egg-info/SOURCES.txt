@@ -3,6 +3,7 @@ setup.py
 dct_image_transform/__init__.py
 dct_image_transform/dct.py
 dct_image_transform/reflection.py
+dct_image_transform/setup.py
 dct_image_transform/translation.py
 dct_image_transform.egg-info/PKG-INFO
 dct_image_transform.egg-info/SOURCES.txt
@@ -12,3 +13,4 @@ dct_image_transform.egg-info/top_level.txt
 tests/__init__.py
 tests/test_dct.py
 tests/test_reflection.py
+tests/test_translation.py
