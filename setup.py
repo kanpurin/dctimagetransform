@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="dct_image_transform",
@@ -8,5 +8,6 @@ setup(
     author_email='kanpurin2@gmail.com',
     install_requires=['numpy'],
     url='https://github.com/kanpurin/dctimagetransform',
+    packages=find_packages(),
     test_suite='tests'
 )
