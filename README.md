@@ -7,7 +7,20 @@ JPEGなどの8x8ブロックごとに離散コサイン変換された画像の�
 - 一部のマスク
 
 # インストール方法
-現在pip installできません. cloneしてください.
+```shell
+$pip install git+https://github.com/kanpurin/dctimagetransform
+```
+
+# 使い方
+```python
+import dct_image_transform.dct as dct
+import dct_image_transform.translation as translation
+
+image = "画像を表す2次元配列"
+
+dct_image = dct.dct2(image) # 画像を8x8ブロックごとに離散コサイン変換
+tf_image = translation.translation(dct_image,100) # DCT画像を平行移動
+```
 
 # 要件
 [numpy](https://numpy.org/)が必要です. 以下のコマンドでインストールしてください.
