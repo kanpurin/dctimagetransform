@@ -8,9 +8,7 @@ setup(
     author_email='kanpurin2@gmail.com',
     install_requires=['numpy'],
     url='https://github.com/kanpurin/dctimagetransform',
-    # packages=find_packages('dct_image_transform',exclude=['tests','images']),
     packages=find_packages(),
-    # package_dir={"": "dct_image_transform"},
     test_suite='tests',
     # include_package_data=True,
     license='MIT'
