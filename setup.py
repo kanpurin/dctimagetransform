@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="dct_image_transform",
-    version='1.0.0',
+    version='1.0.2',
     description='DCT係数上での高速な画像変換',
     author='Kanchi Hibi',
     author_email='kanpurin2@gmail.com',
