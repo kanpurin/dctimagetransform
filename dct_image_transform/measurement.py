@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from skimage import io
 from dct import dct2
 from mask import mask
 import time
