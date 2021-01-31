@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from dct import dct2
+from dct import dct2,idct2
 from mask import mask
 import time
 import sys
@@ -25,7 +25,10 @@ if __name__ == '__main__':
             avg = 0
             for _ in range(loop):
                 start = time.time()
-                a = mask(image,4,8*i+4,4,8*i+4)
+                a = idct2(image)
+                # a = mask(image,4,8*i+4,4,8*i+4)
+                a[4:8*i+4,4:8*i+4] = 0
+                a = dct2(a)
                 end = time.time()
                 avg += (end-start)/loop
             if output:
@@ -43,4 +46,4 @@ if __name__ == '__main__':
                 if output:
                     print('{}x{}:{}[s]'.format(8*i,8*i,avg))
                 df = df.append({'size':i*8,'time':avg},ignore_index=True)
-    df.to_csv('result.csv',index=False)
+    df.to_csv('result_mask_2.csv',index=False)
