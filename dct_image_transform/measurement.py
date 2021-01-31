@@ -147,4 +147,4 @@ if __name__ == '__main__':
         #             print('{}x{}:{}[s]'.format(8*i,8*i,avg))
         #         df = df.append({'size':i*8,'time':avg},ignore_index=True)
     # print(df)
-    df.to_csv('result_mask_2.csv',index=False)
+    df.to_csv('result_other.csv',index=False)
